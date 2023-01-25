@@ -22,7 +22,8 @@ Currently, looking up a ticker (e.g.) will give you the following information:
 <!-- How to run -->
 1. Clone the repo
 2. Get an [API key from Alpha Vantage](https://www.alphavantage.co/support/#api-key)
-3. Store it as an environment variable called `ALPHA_VANTAGE_KEY`
-   1. If you already have the API token stored under a different name, you can simply change the name of the variable in `src/financials.py`
+3. Store it as an environment variable called `ALPHA_VANTAGE_KEY` in the `.env` file in the root directory of the project.
+   1. To see what an example of the `.env` file should look like, refer to `.env.example`.
+   2. If you already have the API token stored under a different name, you can simply change the name of the variable in `src/financials.py`
 4. From the root directory of the project, run `pip install -r requirements.txt`
 5. Run the app with `streamlit run src/app.py`
