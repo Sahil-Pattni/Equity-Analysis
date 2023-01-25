@@ -56,8 +56,14 @@ def load_data(ticker):
 
             # --- Metrics --- #
             col1, col2, col3, col4 = info_container.columns(4)
-            col1.metric(label='Price', value=eg.get_latest_price(daily_adjusted))
-            col2.metric(label='Market Cap', value=millify(overview['MarketCapitalization'], precision=3))
+            col1.metric(
+                label='Price',
+                value=f'USD {eg.get_latest_price(daily_adjusted)}'
+            )
+            col2.metric(
+                label='Market Cap',
+                value=f'USD {millify(overview["MarketCapitalization"], precision=3)}'
+            )
             col3.metric(label='P/E Ratio', value=overview['PERatio'])
             col4.metric(label='Dividend Yield', value=overview['DividendYield'])
             
