@@ -2,8 +2,9 @@
 <!-- UI Screenshot -->
 ![Equity Analysis](images/screenshot.JPG)
 
-## About
+
 ---
+## About
 <!-- Description -->
 This is a simple equity analysis tool that gives you an overview of any publicly traded company. It uses the [Alpha Vantage API](https://www.alphavantage.co/) to get the data and [Streamlit](https://streamlit.io/) to display it. It is a work in progress and I will be adding more features as I go along.
 
@@ -15,8 +16,9 @@ Currently, looking up a ticker (e.g.) will give you the following information:
 - Quarterly Income Statements
 - Quarterly Balance Sheets
 
-### How to Run
+
 ---
+### How to Run
 <!-- How to run -->
 1. Clone the repo
 2. Get an [API key from Alpha Vantage](https://www.alphavantage.co/support/#api-key)
