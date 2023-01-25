@@ -12,7 +12,7 @@ BASE_URL = 'https://www.alphavantage.co/query?function='
 
 
 @st.cache
-def company_overview(symbol) -> Tuple(dict, int):
+def company_overview(symbol) -> Tuple[dict, int]:
     """
     Gets the company overview data from the API.
 
@@ -30,7 +30,7 @@ def company_overview(symbol) -> Tuple(dict, int):
     return response.json(), response.status_code
 
 
-def daily_adjusted(symbol, outputsize='compact') -> Tuple(dict, int):
+def daily_adjusted(symbol, outputsize='compact') -> Tuple[dict, int]:
     """
     Gets the daily adjusted prices from the API.
 
@@ -51,7 +51,7 @@ def daily_adjusted(symbol, outputsize='compact') -> Tuple(dict, int):
 
 
 @st.cache
-def income_statement(symbol, quarterly=True) -> Tuple(pd.DataFrame, int):
+def income_statement(symbol, quarterly=True) -> Tuple[pd.DataFrame, int]:
     """
     Gets the income statement from the API.
 
@@ -79,7 +79,7 @@ def income_statement(symbol, quarterly=True) -> Tuple(pd.DataFrame, int):
 
 
 @st.cache
-def balance_sheet(symbol, quarterly=True) -> Tuple(pd.DataFrame, int):
+def balance_sheet(symbol, quarterly=True) -> Tuple[pd.DataFrame, int]:
     """
     Gets the balance sheet from the API.
 
