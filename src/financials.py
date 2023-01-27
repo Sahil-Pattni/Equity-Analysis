@@ -12,7 +12,6 @@ load_dotenv()
 API_KEY = env['ALPHA_VANTAGE_KEY']
 BASE_URL = 'https://www.alphavantage.co/query?function='
 
-
 @st.cache
 def company_overview(symbol) -> Tuple[dict, int]:
     """
