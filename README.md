@@ -20,7 +20,7 @@ Currently, looking up a ticker (e.g.) will give you the following information:
 ---
 ### How to Run
 <!-- How to run -->
-1. Clone the repo
+1. Clone the repository.
 2. Get an [API key from Alpha Vantage](https://www.alphavantage.co/support/#api-key)
 3. Store it as an environment variable called `ALPHA_VANTAGE_KEY` in the `.env` file in the root directory of the project.
    1. To see what an example of the `.env` file should look like, refer to `.env.example`.
