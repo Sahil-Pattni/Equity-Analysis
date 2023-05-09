@@ -20,6 +20,10 @@ Currently, looking up a ticker (e.g.) will give you the following information:
 ---
 ### How to Run
 <!-- How to run -->
+A live demo can be [found here](TODO).
+
+Alternatively, to run the project locally, follow the steps outlined below:
+
 1. Clone the repo
 2. Get an [API key from Alpha Vantage](https://www.alphavantage.co/support/#api-key)
 3. Store it as an environment variable called `ALPHA_VANTAGE_KEY` in the `.env` file in the root directory of the project.
