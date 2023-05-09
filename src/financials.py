@@ -7,9 +7,14 @@ import requests
 import os
 
 env = os.environ
-load_dotenv()
 
-API_KEY = env['ALPHA_VANTAGE_KEY']
+# Use local .env file if key doesn't exist
+try:
+    API_KEY = env['ALPHA_VANTAGE_KEY']
+except:
+    load_dotenv()
+    API_KEY = env['ALPHA_VANTAGE_KEY']
+
 BASE_URL = 'https://www.alphavantage.co/query?function='
 
 @st.cache
